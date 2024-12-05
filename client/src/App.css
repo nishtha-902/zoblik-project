@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #f5f5f5;
+  background-color: #333333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Home Page Container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://source.unsplash.com/1600x900/?luxury'); /* Classy background image */
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5;
+  font-family: 'Lora', serif;
+  text-align: center;
+  position: relative;
+  background-blur: 10px;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+  background: rgba(0, 0, 0, 0.5); /* Transparent dark overlay */
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: 0 20px;
+}
+
+/* Main Title Styling */
+.welcome-message h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #4a90e2; /* Golden color for elegance */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Subtitle Styling */
+.welcome-message p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #F5F5F5;
+  animation: fadeIn 3s ease-in-out;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.get-started-btn {
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  background-color: #4a90e2; /* Golden background */
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.get-started-btn:hover {
+  background-color: #4a90e2; /* Darker golden color */
+  transform: scale(1.05);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-message {
+      padding: 20px 30px;
+  }
+
+  .welcome-message h1 {
+      font-size: 3rem;
+  }
+
+  .get-started-btn {
+      font-size: 1.1rem;
+      padding: 12px 30px;
+  }
+}
+
+
+
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1, h2 {
+  text-align: center;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #4a90e2;
+}
+
+/* Buttons */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #226cc0;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+input, textarea, select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  resize: none;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #226cc0;
+}
+
+/* List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  color: black;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  background-color: #f8f8f8;
+}
+
+/* Chart */
+.recharts-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dash {
+  display: flex;
+  align-items: center;
+}
+
+.chart {
+  margin-left: 200px;
+}
+
+
+/* Dashboard Layout */
+.dashboard {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+
+.dashboard .card {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Logout Button */
+.logout-btn {
+  background-color: #e74c3c;  /* Red color for logout */
+  color: white;
+  border: none;
+  position: absolute;
+  top: 20px;
+  left:1160px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
