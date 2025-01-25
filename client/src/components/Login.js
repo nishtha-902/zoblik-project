@@ -10,7 +10,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:8000/api/users/login', { email, password });
+            const { data } = await axios.post('https://expense-project-bg3c.onrender.com/api/users/login', { email, password });
             localStorage.setItem('token', data.token);
             navigate('/dashboard');
         } catch (error) {
