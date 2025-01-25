@@ -10,7 +10,7 @@ const AddExpense = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.post(
-                'http://localhost:8000/api/expenses',
+                'http://localhost:8001/api/expenses',
                 { amount, category, description },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
