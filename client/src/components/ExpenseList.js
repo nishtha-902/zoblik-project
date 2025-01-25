@@ -7,7 +7,7 @@ const ExpenseList = () => {
     useEffect(() => {
         const fetchExpenses = async () => {
             const token = localStorage.getItem('token');
-            const { data } = await axios.get('http://localhost:8000/api/expenses', {
+            const { data } = await axios.get('https://expense-project-bg3c.onrender.com/api/expenses', {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setExpenses(data);
