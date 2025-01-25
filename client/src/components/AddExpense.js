@@ -10,7 +10,7 @@ const AddExpense = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.post(
-                'http://localhost:8001/api/expenses',
+                'https://zoblik-project-backend.onrender.com/api/expenses',
                 { amount, category, description },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
