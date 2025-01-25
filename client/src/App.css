@@ -27,6 +27,8 @@ body {
   background-blur: 10px;
 }
 
+
+
 /* Welcome Message Styling */
 .welcome-message {
   background: rgba(0, 0, 0, 0.5); /* Transparent dark overlay */
@@ -77,6 +79,13 @@ body {
   transform: scale(1.05);
 }
 
+.login-register-btn{
+  margin: auto;
+  width:250px;
+  display:flex;
+  justify-content:space-evenly;
+}
+
 /* Fade In Animation */
 @keyframes fadeIn {
   0% {
@@ -103,9 +112,17 @@ body {
       font-size: 1.1rem;
       padding: 12px 30px;
   }
+  
+  .login-register {
+    width:500px;
+  }
 }
 
-
+@media (max-width: 680px) {
+  .login-register {
+    width:60vw;
+  }
+}
 
 
 /* Container */
@@ -216,6 +233,86 @@ li:hover {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Updated Dashboard Styles */
+.dash {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dash > div {
+  flex: 1 1 300px;
+  max-width: 600px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+  flex: 1 1 100%;
+  max-width: 900px;
+  margin:auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logout Button */
+.logout-btn {
+  margin: 1rem auto;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #e04848;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .dash {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .logout-btn {
+    width: 40%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .dash > div {
+    padding: 1rem;
+  }
+
+  .chart {
+    padding: 1rem;
+  }
+
+  .logout-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 
 .dash {
   display: flex;
   align-items: center;
@@ -223,7 +320,7 @@ li:hover {
 
 .chart {
   margin-left: 200px;
-}
+} */
 
 
 /* Dashboard Layout */
@@ -249,8 +346,8 @@ li:hover {
 
 
 /* Logout Button */
-.logout-btn {
-  background-color: #e74c3c;  /* Red color for logout */
+/* .logout-btn {
+  background-color: #e74c3c;  
   color: white;
   border: none;
   position: absolute;
@@ -269,7 +366,7 @@ li:hover {
   background-color: #c0392b;
   transform: translateY(-2px);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
+} */
 
 
 /* Responsive Design */

@@ -16,6 +16,7 @@ const ExpenseDashboard = () => {
     };
     return (
     <div className='dash'>
+        <button onClick={handleLogout} className="logout-btn">Logout</button>
         <div>
         <h1>Expense Dashboard</h1>
         <AddExpense />
@@ -24,7 +25,6 @@ const ExpenseDashboard = () => {
         <div className='chart'>
         <ExpenseChart />
         </div>
-        <button onClick={handleLogout} className="logout-btn">Logout</button>
 
     </div>
     )
