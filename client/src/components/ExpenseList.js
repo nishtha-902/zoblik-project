@@ -7,7 +7,7 @@ const ExpenseList = () => {
     useEffect(() => {
         const fetchExpenses = async () => {
             const token = localStorage.getItem('token');
-            const { data } = await axios.get('http://localhost:8001/api/expenses', {
+            const { data } = await axios.get('https://zoblik-project-backend.onrender.com/api/expenses', {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setExpenses(data);
